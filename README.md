@@ -5,8 +5,6 @@
   <img src="assets/architecture.jpg" alt="crispAIPE architecture: input representation and model" width="760">
 </p>
 
-<p align="center"><em>crispAIPE architecture. <strong>(A)</strong> The pegRNA–DNA interface (protospacer, primer-binding site, RT template, edit-direction mismatch, and per-base identity channels) is encoded into an 11×99 unified representation. <strong>(B)</strong> A transformer encoder over the tokenized sequence is concatenated with the unified representation and passed through a Dirichlet block to output concentration parameters α, paired with a split-conformal HDR region calibrated on a held-out validation fold (with an optional regression block).</em></p>
-
 ## Table of Contents
 
 - [Installation](#installation)
