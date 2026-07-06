@@ -1,0 +1,23 @@
+{
+  "crispAIPE": {
+    "intended_spearman": 0.8388387465449757,
+    "intended_pearson": 0.8487846255302429,
+    "unintended_spearman": 0.8387980718138545,
+    "unintended_pearson": 0.8487844467163086,
+    "average": 0.8438014726513454
+  },
+  "OPED": {
+    "intended_spearman": 0.905,
+    "intended_pearson": 0.912,
+    "unintended_spearman": 0.826,
+    "unintended_pearson": 0.81,
+    "average": 0.8632500000000001
+  },
+  "PRIDICT": {
+    "intended_spearman": 0.85,
+    "intended_pearson": 0.86,
+    "unintended_spearman": 0.78,
+    "unintended_pearson": 0.74,
+    "average": 0.8075000000000001
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "n_samples": 13844,
+  "edited_spearman": 0.9007577009287185,
+  "edited_pearson": 0.9087779581154681,
+  "unedited_spearman": 0.906136079942109,
+  "unedited_pearson": 0.9183326489365599,
+  "indel_spearman": 0.7683914196455212,
+  "indel_pearson": 0.8045933347304735
+}

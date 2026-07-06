@@ -1,0 +1,29 @@
+{
+  "Dirichlet": {
+    "test_loss": -3.0997601155577037,
+    "val_loss": -3.0689887383888506,
+    "edited_spearman": 0.8747977306685452,
+    "unedited_spearman": 0.8780851802209533,
+    "indel_spearman": 0.7245712199511352,
+    "overall_spearman": 0.8810433501356402,
+    "n_samples": 18485
+  },
+  "Softmax": {
+    "test_loss": 0.8290726834330066,
+    "val_loss": 0.8289432607848068,
+    "edited_spearman": 0.10916708042747948,
+    "unedited_spearman": 0.1341650865200951,
+    "indel_spearman": 0.14116154768795383,
+    "overall_spearman": 0.1994889228621781,
+    "n_samples": 18485
+  },
+  "Logit-Normal": {
+    "test_loss": 1.4301613339062396,
+    "val_loss": 1.4265305050488175,
+    "edited_spearman": -0.842040261219875,
+    "unedited_spearman": -0.8458864805787709,
+    "indel_spearman": -0.6577737705924955,
+    "overall_spearman": -0.04989755076827775,
+    "n_samples": 18485
+  }
+}

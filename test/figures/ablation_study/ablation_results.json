@@ -1,0 +1,29 @@
+{
+  "Hybrid (crispAIPE)": {
+    "test_loss": -3.0997601155577037,
+    "val_loss": -3.0689887383888506,
+    "edited_spearman": 0.8747977306685452,
+    "unedited_spearman": 0.8780851802209533,
+    "indel_spearman": 0.7245712199511352,
+    "overall_spearman": 0.8810433501356402,
+    "n_samples": 18485
+  },
+  "Transformer-only": {
+    "test_loss": -2.0840111633826948,
+    "val_loss": -2.0691626524103097,
+    "edited_spearman": 0.5806535640502936,
+    "unedited_spearman": 0.622114195663653,
+    "indel_spearman": 0.5029692455716622,
+    "overall_spearman": 0.6494494448772211,
+    "n_samples": 18485
+  },
+  "CNN-only": {
+    "test_loss": -2.7879083436110923,
+    "val_loss": -2.7522859532257606,
+    "edited_spearman": 0.8232271552554098,
+    "unedited_spearman": 0.8302008609640582,
+    "indel_spearman": 0.6564703224147899,
+    "overall_spearman": 0.8445158974888812,
+    "n_samples": 18485
+  }
+}
