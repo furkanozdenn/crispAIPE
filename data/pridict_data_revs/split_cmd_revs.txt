@@ -1,0 +1,29 @@
+# Target-disjoint split for PRIDICT data (revised)
+# Groups pegRNAs by target mutation (`Name` in the original PRIDICT Library-1
+# spreadsheet) and splits at the mutation level to prevent data leakage from
+# related pegRNAs across partitions.
+#
+# Old (LEAKY) split:
+#   python data/pridict_data/random_select_csv.py data/pridict_data/pridict-90k-cleaned.csv \
+#       data/pridict_data/pridict-train.csv data/pridict_data/pridict-test.csv 80 --seed 42
+#
+# New (TARGET-DISJOINT) split from the public PRIDICT supplementary workbook:
+python data/pridict_data_revs/target_disjoint_split.py \
+    --excel data/pridict_data_revs/41587_2022_1613_MOESM5_ESM.xlsx \
+    --output_dir data/pridict_data_revs/ \
+    --train_frac 0.70 --val_frac 0.15 --test_frac 0.15 --seed 42
+#
+# Equivalent command if the pre-cleaned crispAIPE-format CSV is already present:
+# python data/pridict_data_revs/target_disjoint_split.py \
+#     --csv data/pridict_data_revs/pridict-90k-cleaned.csv \
+#     --excel data/pridict_data_revs/41587_2022_1613_MOESM5_ESM.xlsx \
+#     --output_dir data/pridict_data_revs/ \
+#     --train_frac 0.70 --val_frac 0.15 --test_frac 0.15 --seed 42
+#
+# Current local result:
+#   pridict-train_revs.csv:  64,751 samples (70.1%), 9,344 mutations
+#   pridict-val_revs.csv:    13,828 samples (15.0%), 2,002 mutations
+#   pridict-test_revs.csv:   13,844 samples (15.0%), 2,003 mutations
+#   Train-Val mutation overlap:   0
+#   Train-Test mutation overlap:  0
+#   Val-Test mutation overlap:    0
