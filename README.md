@@ -1,5 +1,12 @@
 # crispAIPE: Probabilistic Modelling of Prime Editing Variant Correction Efficiency
 
+
+<p align="center">
+  <img src="assets/crispaipe_architecture.jpg" alt="crispAIPE input representation and encoding" width="760">
+</p>
+
+<p align="center"><em>crispAIPE encodes the pegRNA–DNA interface (protospacer, primer-binding site, RT template, edit-direction mismatch, and per-base identity channels) into an 11×99 unified representation.</em></p>
+
 ## Table of Contents
 
 - [Installation](#installation)
