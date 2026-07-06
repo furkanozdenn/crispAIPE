@@ -400,25 +400,6 @@ older random split and are kept for reproducibility audits only.
 - `crispAIPE_regression_deepprime_conf.json` — `crispAIPE-reg` (MSE regression) on the DeepPrime HEK293T PE2 split
 - `crispAIPE_train_test_split_conf.json`, `crispAIPE_conf1.json`, and the four non-`_revs` ablation configs — *legacy random-split configs; do not use for the published numbers.*
 
-## Advanced Usage
-
-### Custom Model Variants
-
-The codebase includes several model variants:
-
-1. **crispAIPE (Default)** — Hybrid Transformer + CNN with Dirichlet output (`pe_uncert_models/models/crispAIPE.py`)
-2. **crispAIPE-reg** — MSE-regression efficiency-only variant (`crispAIPE_regression.py`, train via `train_regression.py`)
-3. **crispAIPE_Softmax / crispAIPE_LogitNormal** — Distribution-ablation heads (`distribution_ablation.py`)
-4. **TransformerOnly / CNNOnly** — Architecture-ablation variants (used by `train_ablation.py`)
-
-### Using Different Configurations
-
-Use one of the provided config files (the wrapper sets `assesor_type` from the
-config; pass it explicitly only when overriding):
-
-```bash
-./train_crispAIPE_revs.sh --assesor_type softmax
-```
 
 ### Regression variant (`crispAIPE-reg`)
 
@@ -430,25 +411,6 @@ python pe_uncert_models/models/train_regression.py \
 The regression results figures used in the manuscript are produced by
 `test/plot_regression_results.py` and `test/regression_performance_comparison.py`.
 
-## Troubleshooting
-
-### Common Issues
-
-1. **CUDA Out of Memory**: Reduce `batch_size` or use CPU mode (`--cpu true`)
-2. **File Not Found**: Ensure data paths are correct relative to the config file location
-3. **Import Errors**: Make sure the package is installed (`pip install -e .`)
-
-### Device Selection
-
-The script automatically detects and uses:
-- CUDA GPUs (if available)
-- Apple Silicon MPS (M1/M2 Macs)
-- CPU (fallback)
-
-Force CPU mode:
-```bash
-./train_crispAIPE.sh --cpu true
-```
 
 ## Citation
 
