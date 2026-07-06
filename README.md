@@ -398,7 +398,6 @@ older random split and are kept for reproducibility audits only.
 - `crispAIPE_cnn_only_revs_conf.json` — CNN-only architecture ablation on target-disjoint split
 - `crispAIPE_transformer_only_revs_conf.json` — Transformer-only architecture ablation on target-disjoint split
 - `crispAIPE_regression_deepprime_conf.json` — `crispAIPE-reg` (MSE regression) on the DeepPrime HEK293T PE2 split
-- `crispAIPE_train_test_split_conf.json`, `crispAIPE_conf1.json`, and the four non-`_revs` ablation configs — *legacy random-split configs; do not use for the published numbers.*
 
 
 ### Regression variant (`crispAIPE-reg`)
